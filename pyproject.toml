@@ -1,0 +1,11 @@
+[project]
+name = "jenkins-tutorial"
+version = "0.1.0"
+description = "Through this project, i am planning to learn jenkins"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "pandas>=2.3.3",
+    "python-jenkins>=1.8.3",
+]
