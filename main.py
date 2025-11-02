@@ -1,8 +1,8 @@
-import pandas as pd 
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-
-data = pd.read_csv("movies.csv")
-
-
-print(data.info())
+@app.get("/items/{item_id}")
+async def read_item(item_id: int):
+    return {"item_id": item_id}
