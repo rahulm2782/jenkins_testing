@@ -13,7 +13,7 @@ pipeline{
         }
         stage('where am i?'){
             steps{
-                sh "pwd"
+                sh "uv --version"
             }
         }
     }
